@@ -57,7 +57,7 @@ class Sankey extends React.Component {
             value={this.state.weight}
           />
           <button>
-            Add #{this.state.data.length}
+            Add #{this.state.data.length -1}
           </button>
         </form>
         </header>
