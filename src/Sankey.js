@@ -20,7 +20,7 @@ class Sankey extends React.Component {
     return (
       <div className="App">
       <header className="App-header">
-        <h3>Finance Sankey</h3>
+        <h3>Niti Dashboard</h3>
         <Chart
           chartType="Sankey"
           width="60%"
