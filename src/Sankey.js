@@ -19,47 +19,47 @@ class Sankey extends React.Component {
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-        <h3>Niti Dashboard</h3>
-        <Chart
-          chartType="Sankey"
-          width="60%"
-          height="300px"
-          data={this.state.data}
-          options={options}
-        />
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="flow-from">
-            From
-          </label>
-          <input
-            id="flow-from"
-            name="from"
-            onChange={this.handleChange}
-            value={this.state.from}
-          />
-          <label htmlFor="flow-to">
-            To
-          </label>
-          <input
-            id="flow-to"
-            name="to"
-            onChange={this.handleChange}
-            value={this.state.to}
-          />
-          <label htmlFor="flow-weight">
-            Amount
-          </label>
-          <input
-            id="flow-weight"
-            name="weight"
-            onChange={this.handleChange}
-            value={this.state.weight}
-          />
-          <button>
-            Add #{this.state.data.length -1}
-          </button>
-        </form>
+        <header className="App-header" margin="auto">
+          <h3>Niti Dashboard</h3>
+          <Chart
+              chartType="Sankey"
+              width="100%"
+              height="300px"
+              data={this.state.data}
+              options={options}
+            />
+            <form onSubmit={this.handleSubmit}>
+              <label htmlFor="flow-from">
+                From
+              </label>
+              <input
+                id="flow-from"
+                name="from"
+                onChange={this.handleChange}
+                value={this.state.from}
+              />
+              <label htmlFor="flow-to">
+                To
+              </label>
+              <input
+                id="flow-to"
+                name="to"
+                onChange={this.handleChange}
+                value={this.state.to}
+              />
+              <label htmlFor="flow-weight">
+                Amount
+              </label>
+              <input
+                id="flow-weight"
+                name="weight"
+                onChange={this.handleChange}
+                value={this.state.weight}
+              />
+              <button>
+                Add #{this.state.data.length -1}
+              </button>
+            </form>
         </header>
         <div className="footer">
           <p>
